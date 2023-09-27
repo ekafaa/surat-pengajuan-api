@@ -69,3 +69,5 @@ mongoose
     server.listen(process.env.PORT, () => console.log("Server is Connected"));
   })
   .catch((err) => console.log(err));
+
+module.exports = app;
