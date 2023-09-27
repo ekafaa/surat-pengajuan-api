@@ -57,3 +57,4 @@ mongoose_1.default
     server.listen(process.env.PORT, () => console.log("Server is Connected"));
 })
     .catch((err) => console.log(err));
+exports.default = app;
