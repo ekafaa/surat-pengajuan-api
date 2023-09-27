@@ -24,7 +24,7 @@ const server = https_1.default.createServer({
     cert: cert,
 }, app);
 app.use((0, cors_1.default)({
-    origin: "https://surat-pengajuan-online.vercel.app",
+    origin: ["https://surat-pengajuan-online.vercel.app", "http://localhost:3030"],
     credentials: false,
     allowedHeaders: ['Content-Type', 'Set-Cookie', 'Authorization', 'Accept', 'x-xsrf-token'],
     methods: ['POST', 'GET', 'PUT', 'DELETE', 'PATCH', 'OPTIONS']

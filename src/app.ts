@@ -32,7 +32,7 @@ const server = https.createServer(
 );
 
 app.use(cors({
-  origin: "https://surat-pengajuan-online.vercel.app",
+  origin: ["https://surat-pengajuan-online.vercel.app", "http://localhost:3030"],
   credentials: false,
   allowedHeaders: ['Content-Type', 'Set-Cookie', 'Authorization', 'Accept', 'x-xsrf-token'],
   methods: ['POST', 'GET', 'PUT', 'DELETE', 'PATCH', 'OPTIONS']
