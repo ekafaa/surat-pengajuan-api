@@ -32,7 +32,7 @@ const server = https.createServer(
 );
 
 app.use(cors({
-  origin: process.env.ORIGIN?.split(' '),
+  origin: "https://surat-pengajuan-online.vercel.app",
   credentials: false,
   allowedHeaders: ['Content-Type', 'Set-Cookie', 'Authorization', 'Accept', 'x-xsrf-token'],
   methods: ['POST', 'GET', 'PUT', 'DELETE', 'PATCH', 'OPTIONS']

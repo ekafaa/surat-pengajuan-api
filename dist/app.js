@@ -2,7 +2,6 @@
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
-var _a;
 Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const mongoose_1 = __importDefault(require("mongoose"));
@@ -25,7 +24,7 @@ const server = https_1.default.createServer({
     cert: cert,
 }, app);
 app.use((0, cors_1.default)({
-    origin: (_a = process.env.ORIGIN) === null || _a === void 0 ? void 0 : _a.split(' '),
+    origin: "https://surat-pengajuan-online.vercel.app",
     credentials: false,
     allowedHeaders: ['Content-Type', 'Set-Cookie', 'Authorization', 'Accept', 'x-xsrf-token'],
     methods: ['POST', 'GET', 'PUT', 'DELETE', 'PATCH', 'OPTIONS']
