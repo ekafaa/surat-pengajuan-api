@@ -37,7 +37,7 @@ app.use(cors({
   allowedHeaders: ['Content-Type', 'Set-Cookie', 'Authorization', 'Accept', 'x-xsrf-token'],
   methods: ['POST', 'GET', 'PUT', 'DELETE', 'PATCH', 'OPTIONS']
 }));
-app.options("*", cors());
+
 app.use(helmet());
 app.use(express.json());
 

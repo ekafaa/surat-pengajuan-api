@@ -29,7 +29,6 @@ app.use((0, cors_1.default)({
     allowedHeaders: ['Content-Type', 'Set-Cookie', 'Authorization', 'Accept', 'x-xsrf-token'],
     methods: ['POST', 'GET', 'PUT', 'DELETE', 'PATCH', 'OPTIONS']
 }));
-app.options("*", (0, cors_1.default)());
 app.use((0, helmet_1.default)());
 app.use(express_1.default.json());
 //Admin
