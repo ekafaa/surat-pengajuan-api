@@ -13,7 +13,7 @@ const fs_1 = __importDefault(require("fs"));
 const path_1 = __importDefault(require("path"));
 const https_1 = __importDefault(require("https"));
 const protected_1 = require("./middleware/protected");
-const cors_1 = __importDefault(require("cors"));
+// import cors from "cors";
 const helmet_1 = __importDefault(require("helmet"));
 dotenv_1.default.config();
 const key = fs_1.default.readFileSync(path_1.default.join(__dirname, "..", "selfsigned.key"));
@@ -23,7 +23,7 @@ const server = https_1.default.createServer({
     key: key,
     cert: cert,
 }, app);
-app.use((0, cors_1.default)());
+// app.use(cors());
 app.use((0, helmet_1.default)());
 app.use(express_1.default.json());
 //Admin
