@@ -14,7 +14,7 @@ import fs from "fs";
 import path from "path";
 import https from "https";
 import { verifiedUser, verifiedAdmin } from "./middleware/protected";
-import cors from "cors";
+// import cors from "cors";
 import helmet from "helmet";
 
 dotaenv.config();
@@ -31,7 +31,7 @@ const server = https.createServer(
   app
 );
 
-app.use(cors());
+// app.use(cors());
 app.use(helmet());
 app.use(express.json());
 
